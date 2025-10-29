@@ -25,38 +25,48 @@ Each page is developed using **React** and **Plain CSS**, adhering strictly to F
 | Technology | Purpose |
 |-------------|----------|
 | **React.js** | Frontend framework |
-| **React Router** | For smooth navigation between screens |
+| **React Router** | Smooth navigation between screens |
 | **Plain CSS** | Custom styling for each page |
 | **React Icons** | Modern icons for intuitive UI |
 | **JavaScript (ES6+)** | Page logic and interactivity |
 
 ---
 
-##🖼️ Screenshots
-🏁 1. Start Page
-startpage.png
-⚙️ 2. Setup Page
-setuppage.png
-🍴 3. Food Preference Page
-foodpreference.png
-🚫 4. Allergies Page
-allergies.png
-🍪 5. Snacks Preference Page
- snackes.png
- 
----
+## 🖼️ Screenshots  
 
-##👩‍💻 Developer Information
+### 🏁 1. Start Page  
+![Start Page](public/startpage.png)
 
-Name: Prerana Virbhadra Biradar
-Role: Full Stack Developer Intern
-Organization: FitFare Pvt. Ltd.
-Duration: October 2025
-Project Title: Nutrition Setup Module (React + CSS)
+### ⚙️ 2. Setup Page  
+![Setup Page](public/setuppage.png)
+
+### 🍴 3. Food Preference Page  
+![Food Preference Page](public/foodpreference.png)
+
+### 🚫 4. Allergies Page  
+![Allergies Page](public/allergies.png)
+
+### 🍪 5. Snacks Preference Page  
+![Snacks Preference Page](public/snackes.png)
 
 ---
-##💡 Future Enhancements
 
-🔗 Connect with backend (MySQL + Node.js) for data storage
+## 👩‍💻 Developer Information  
 
+**Name:** Prerana Virbhadra Biradar  
+**Role:** Full Stack Developer Intern  
+**Organization:** FitFare Pvt. Ltd.  
+**Duration:** October 2025  
+**Project Title:** Nutrition Setup Module (React + CSS)
 
+---
+
+## 💡 Future Enhancements  
+
+- 🔗 Connect with backend (**Node.js + MySQL**) for real data storage  
+- 💾 Implement user authentication and profile integration  
+- 📱 Make design responsive for mobile screens  
+
+---
+
+> _A React-based Nutrition Setup Module for FitFare that allows users to personalize their food preferences, allergies, and snack habits through a clean, responsive UI._
