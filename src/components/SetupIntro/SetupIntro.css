@@ -1,0 +1,123 @@
+
+.setup-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: "Inter", "Poppins", sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+
+
+
+.text-section {
+  position: relative;
+  bottom: 90px;
+  text-align: left;
+  width: 100%;
+  max-width: 100%; 
+  padding-right: 100px;
+  white-space: normal; 
+}
+
+.text-section h1 {
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 100px;
+  line-height: 1.4;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+
+
+
+.button-section {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+}
+
+.btn.primary {
+  background-color: #0056ff;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #0042cc;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #0056ff;
+  color: #0056ff;
+}
+
+.btn.outline:hover {
+  background-color: #0056ff;
+  color: white;
+}
+
+.btn.danger {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+.btn.danger:hover {
+  background-color: #e53b3b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .setup-page {
+    padding: 40px;
+  }
+
+  .plus-icon {
+    font-size: 36px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .text-section {
+    bottom: 40px;
+    text-align: left;
+  }
+
+  .text-section h1 {
+    font-size: 26px;
+  }
+
+  .button-section {
+    right: 20px;
+    bottom: 30px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    min-width: unset;
+  }
+}

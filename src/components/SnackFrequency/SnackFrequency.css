@@ -1,0 +1,86 @@
+/* ---------- Base Layout ---------- */
+.page-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", "Poppins", sans-serif;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ---------- Options Section ---------- */
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ---------- Option Buttons ---------- */
+.option {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  padding: 14px 0;
+  width: 100%;
+  height: 30px; 
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  color: #0066ff;
+}
+
+.option.selected {
+  color: #0066ff;
+  border: 2px solid #0066ff;
+  font-weight: 600;
+}
+
+/* ---------- Continue Button ---------- */
+.continue-btn {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 26px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #0052cc;
+}

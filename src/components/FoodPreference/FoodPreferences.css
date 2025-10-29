@@ -1,0 +1,100 @@
+.food-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", "Poppins", sans-serif;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden; /* 👈 disables scrolling */
+}
+
+.food-container {
+  width: 100%;
+  max-width: 420px;
+  height: 100vh; /* 👈 ensures full height to avoid overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+
+
+.heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000000;
+  text-align: left;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background-color: #f7faff;
+}
+
+.option.selected {
+  border: 1.5px solid #0066ff;
+  background-color: #f0f6ff;
+}
+
+.option input {
+  accent-color: #0066ff;
+  margin-left: auto;
+}
+
+/* Icon box styling */
+.icon-box {
+  font-size: 20px;
+  color: #0066ff;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-text {
+  flex-grow: 1;
+}
+
+/* Continue button */
+.continue-btn2 {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.continue-btn2:hover {
+  background-color: #0050cc;
+}

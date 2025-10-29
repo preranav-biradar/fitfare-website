@@ -1,0 +1,131 @@
+/* ---------- Fullscreen Layout ---------- */
+.allergy-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+/* ---------- Center Card ---------- */
+.allergy-card {
+  width: 100%;
+  max-width: 600px;
+  height: 88vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 100px 50px 50px; 
+  box-sizing: border-box;
+}
+
+/* ---------- Plus Icon (Left aligned) ---------- */
+
+
+/* ---------- Title ---------- */
+.allergy-card h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* ---------- Chips ---------- */
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #fff;
+  color: #1a1a1a;
+  transition: all 0.25s ease;
+}
+
+.chip:hover {
+  border-color: #0066ff;
+  background-color: #f0f7ff;
+}
+
+.chip.selected {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-color: #0066ff;
+}
+
+.chip-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Note ---------- */
+.note {
+  font-size: 15px;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 40px 0 20px; /* consistent spacing */
+}
+
+
+
+/* ---------- Continue Button ---------- */
+.continue-btn1 {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+  width: 100%;
+  margin-top: auto; /* pushes button to bottom */
+  margin-bottom: 10px; /* small bottom gap */
+}
+
+.continue-btn1:hover {
+  background-color: #0052cc;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .allergy-card {
+    padding: 35px 25px;
+    height: 90vh;
+  }
+
+  .allergy-card h2 {
+    font-size: 22px;
+  }
+
+  .chip {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .continue-btn1 {
+    font-size: 16px;
+  }
+
+  .note {
+    font-size: 14px;
+  }
+}
