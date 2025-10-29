@@ -1,16 +1,62 @@
-# React + Vite
+# 🥗 FitFare – Nutrition Setup Module (React + CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📘 Overview  
+This project is part of my **Full Stack Developer Internship at FitFare Pvt. Ltd.**  
+It represents the **Nutrition Setup Flow**, designed to help users personalize their food preferences and dietary needs during onboarding.  
 
-Currently, two official plugins are available:
+Each page is developed using **React** and **Plain CSS**, adhering strictly to FitFare’s official design system — clean, professional, and optimized for **laptop displays (no scrolling)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧩 Pages Included  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Page Name | Description |
+|------------|-------------|
+| **Start Page** | Welcome screen that introduces FitFare’s Nutrition AI. |
+| **Setup Page** | Initial setup page guiding users through the onboarding steps. |
+| **Food Preferences** | Allows users to select their vegetarian or non-vegetarian preferences. |
+| **Allergies Page** | Lets users choose from common allergens (with icons) or select “None.” |
+| **Snacks Page** | Enables selection of preferred snack frequency. |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Tech Stack  
+
+| Technology | Purpose |
+|-------------|----------|
+| **React.js** | Frontend framework |
+| **React Router** | For smooth navigation between screens |
+| **Plain CSS** | Custom styling for each page |
+| **React Icons** | Modern icons for intuitive UI |
+| **JavaScript (ES6+)** | Page logic and interactivity |
+
+---
+
+##🖼️ Screenshots
+🏁 1. Start Page
+startpage.png
+⚙️ 2. Setup Page
+setuppage.png
+🍴 3. Food Preference Page
+foodpreference.png
+🚫 4. Allergies Page
+allergies.png
+🍪 5. Snacks Preference Page
+ snackes.png
+ 
+---
+
+##👩‍💻 Developer Information
+
+Name: Prerana Virbhadra Biradar
+Role: Full Stack Developer Intern
+Organization: FitFare Pvt. Ltd.
+Duration: October 2025
+Project Title: Nutrition Setup Module (React + CSS)
+
+---
+##💡 Future Enhancements
+
+🔗 Connect with backend (MySQL + Node.js) for data storage
+
+
