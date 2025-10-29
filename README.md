@@ -4,7 +4,7 @@
 This project is part of my **Full Stack Developer Internship at FitFare Pvt. Ltd.**  
 It represents the **Nutrition Setup Flow**, designed to help users personalize their food preferences and dietary needs during onboarding.  
 
-Each page is developed using **React** and **Plain CSS**, adhering strictly to FitFare’s official design system — clean, professional, and optimized for **laptop displays (no scrolling)**.
+Each page is developed using **React** and **Plain CSS** — clean, professional, and optimized for **laptop displays (no scrolling)**.
 
 ---
 
