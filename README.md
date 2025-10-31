@@ -82,4 +82,3 @@ The layout is optimized for **laptop displays (no scrolling)** to ensure a seaml
 
 ---
 
-> _A modern React-based Nutrition Setup Module that enables users to personalize dietary preferences, snack routines, and allergy information — built with a clean and engaging UI for FitFare Pvt. Ltd._
