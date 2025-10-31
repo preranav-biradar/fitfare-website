@@ -46,7 +46,7 @@ The layout is optimized for **laptop displays (no scrolling)** to ensure a seaml
 ![Startup Page](public/2nd.png)
 
 ### 🍴 3. Food Preference Page  
-![Food Preference Page](public/3th.png)
+![Food Preference Page](public/3rd.png)
 
 ### 🚫 4. Allergies Modal  
 ![Allergies Modal](public/4th.png)
