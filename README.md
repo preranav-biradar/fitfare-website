@@ -45,22 +45,19 @@ The layout is optimized for **laptop displays (no scrolling)** to ensure a seaml
 ### 🏁 2. Startup Page  
 ![Startup Page](public/2nd.png)
 
-### ⚙️ 3. Setup Page  
-![Setup Page](public/3rd.png)
+### 🍴 3. Food Preference Page  
+![Food Preference Page](public/3th.png)
 
-### 🍴 4. Food Preference Page  
-![Food Preference Page](public/4th.png)
+### 🚫 4. Allergies Modal  
+![Allergies Modal](public/4th.png)
 
-### 🚫 5. Allergies Modal  
-![Allergies Modal](public/5th.png)
+### 🍪 5. Snack Routine Page  
+![Snack Routine Page](public/6th.png)
 
-### 🍪 6. Snack Routine Page  
-![Snack Routine Page](public/7th.png)
+### 🔥 6. Calories Intake Page  
+![Calories Page](public/7th.png)
 
-### 🔥 7. Calories Intake Page  
-![Calories Page](public/8th.png)
-
-### 🧠 8. Food Allergies Summary  
+### 🧠 7. Food Allergies Summary  
 ![Food Allergies Summary](public/9th.png)
 
 
