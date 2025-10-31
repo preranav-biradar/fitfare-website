@@ -18,34 +18,39 @@ const FoodPreferences = () => {
   ];
 
   const handleContinue = () => {
-    navigate("/allergies"); 
+    navigate("/allergies");
   };
 
   return (
-    <div className="food-page">
-      <div className="food-container">
-        <div className="plus-icon"></div>
-        <h2 className="heading">What are your food preferences?</h2>
+  <div className="food-page">
+  <div className="food-image-section"></div>
 
-        <div className="options">
-          {options.map((item) => (
-            <label
-              key={item.label}
-              className={`option ${selected === item.label ? "selected" : ""}`}
-              onClick={() => setSelected(item.label)}
-            >
-              <div className="icon-box">{item.icon}</div>
-              <span className="option-text">{item.label}</span>
-              <input type="radio" checked={selected === item.label} readOnly />
-            </label>
-          ))}
-        </div>
+  <div className="food-container">
+    <div className="food-content-box">
+      <h2 className="heading">What are your food preferences?</h2>
 
-        <button className="continue-btn2" onClick={handleContinue}>
-          Continue →
-        </button>
+      <div className="options">
+        {options.map((item) => (
+          <label
+            key={item.label}
+            className={`option ${selected === item.label ? "selected" : ""}`}
+            onClick={() => setSelected(item.label)}
+          >
+            <div className="icon-box">{item.icon}</div>
+            <span className="option-text">{item.label}</span>
+            <input type="radio" checked={selected === item.label} readOnly />
+          </label>
+        ))}
       </div>
+
+      <button className="continue-button" onClick={handleContinue}>
+        Continue →
+      </button>
     </div>
+  </div>
+</div>
+
+
   );
 };
 

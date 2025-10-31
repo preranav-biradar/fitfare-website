@@ -8,6 +8,7 @@ import { GiWheat, GiMilkCarton } from "react-icons/gi";
 const Allergies = () => {
   const navigate = useNavigate();
   const [selected, setSelected] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   const options = [
     { name: "Gluten", icon: <MdOutlineGrain /> },
@@ -34,7 +35,15 @@ const Allergies = () => {
   };
 
   const handleContinue = () => {
-    navigate("/snack-frequency");
+    if (selected.length === 0) {
+      setShowModal(true); // show modal if no selection
+    } else {
+      navigate("/snack-frequency");
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -56,15 +65,30 @@ const Allergies = () => {
           ))}
         </div>
 
+        <hr className="line" />
+
         <div className="note">
           <MdInfoOutline className="note-icon" />
           You can select multiple options
         </div>
 
-        <button className="continue-btn1" onClick={handleContinue}>
+        <button className="continue-btn11" onClick={handleContinue}>
           Continue →
         </button>
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-box">
+            <h3>⚠️ Please Select an Option</h3>
+            <p>You must choose at least one allergy before continuing.</p>
+            <button className="modal-btn" onClick={closeModal}>
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

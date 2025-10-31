@@ -1,59 +1,90 @@
+/* ---------- Base Layout ---------- */
 .food-page {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* ---------- Left Background Image ---------- */
+.food-image-section {
+  flex: 1;
+  background-image: url("/Kito recipies.jpg");
+  
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+/* ---------- Right Content Box ---------- */
+.food-container {
+  flex: 1;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  font-family: "Inter", "Poppins", sans-serif;
   align-items: center;
-  font-family: "Poppins", sans-serif;
-  overflow: hidden; /* 👈 disables scrolling */
+  padding: 0; 
+  box-sizing: border-box;
+  border-radius: 0 20px 20px 0;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  overflow: hidden; /* Prevent scrolling */
 }
 
-.food-container {
-  width: 100%;
-  max-width: 420px;
-  height: 100vh; /* 👈 ensures full height to avoid overflow */
+/* ---------- Inner Border Box ---------- */
+.food-content-box {
+  border: 2px solid #000;
+  border-radius: 16px;
+  padding: 35px 45px;
+  width: 90%;
+  max-width: 460px;
+  background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 24px;
+  align-items: stretch;
+  justify-content: center; /* Keeps elements centered vertically */
   box-sizing: border-box;
-  color: #000000;
+  transform: scale(0.95); /* Slight scale-down to ensure no cutoff */
 }
 
-
-
+/* ---------- Heading ---------- */
 .heading {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 25px;
   color: #000000;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  
 }
 
+/* ---------- Options ---------- */
 .options {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .option {
   border: 1px solid #d9d9d9;
   border-radius: 12px;
-  padding: 12px 14px;
-  font-size: 16px;
+  padding: 12px 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   background-color: #ffffff;
   color: #000000;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .option:hover {
   background-color: #f7faff;
+  transform: scale(1.02);
 }
 
 .option.selected {
@@ -66,7 +97,6 @@
   margin-left: auto;
 }
 
-/* Icon box styling */
 .icon-box {
   font-size: 20px;
   color: #0066ff;
@@ -80,21 +110,51 @@
   flex-grow: 1;
 }
 
-/* Continue button */
-.continue-btn2 {
+/* ---------- Continue Button ---------- */
+.continue-button {
   background-color: #0066ff;
   color: white;
   border: none;
   border-radius: 12px;
-  padding: 14px;
+  padding: 12px;
   font-size: 16px;
   cursor: pointer;
   width: 100%;
-  margin-top: 30px;
   font-weight: 500;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
-.continue-btn2:hover {
-  background-color: #0050cc;
+.continue-button:hover {
+  background-color: #004de6;
+  transform: scale(1.03);
+}
+
+/* ---------- Responsive View ---------- */
+@media (max-width: 900px) {
+  .food-page {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .food-image-section {
+    height: 35vh;
+  }
+
+  .food-container {
+    height: 65vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .food-content-box {
+    width: 90%;
+    padding: 25px 20px;
+    transform: scale(0.92);
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 22px;
+  }
 }

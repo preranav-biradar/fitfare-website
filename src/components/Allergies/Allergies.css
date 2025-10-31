@@ -2,27 +2,40 @@
 .allergy-container {
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url("/b1.jpg");
+  background-size: cover;
+  background-position: center 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Poppins", sans-serif;
 }
 
 /* ---------- Center Card ---------- */
 .allergy-card {
   width: 100%;
   max-width: 600px;
-  height: 88vh; 
+  height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 100px 50px 50px; 
+  padding: 100px 50px 50px;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 20px;
+  border: 2px solid rgba(0, 102, 255, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-/* ---------- Plus Icon (Left aligned) ---------- */
-
+.allergy-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
 
 /* ---------- Title ---------- */
 .allergy-card h2 {
@@ -53,23 +66,85 @@
   background-color: #fff;
   color: #1a1a1a;
   transition: all 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .chip:hover {
   border-color: #0066ff;
   background-color: #f0f7ff;
+  transform: scale(1.03);
 }
 
 .chip.selected {
   background-color: #0066ff;
   color: #ffffff;
   border-color: #0066ff;
+  box-shadow: 0 3px 8px rgba(0, 102, 255, 0.25);
 }
 
 .chip-icon {
   font-size: 18px;
   display: flex;
   align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin: 20px 0;
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+/* ---------- Modal Overlay ---------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* ---------- Modal Box ---------- */
+.modal-box {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-box p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.modal-btn {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-btn:hover {
+  background-color: #004fcc;
 }
 
 /* ---------- Note ---------- */
@@ -80,13 +155,16 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin: 40px 0 20px; /* consistent spacing */
+  margin: 30px 0 20px;
 }
 
-
+.note-icon {
+  color: #0066ff;
+  font-size: 18px;
+}
 
 /* ---------- Continue Button ---------- */
-.continue-btn1 {
+.continue-btn11 {
   background-color: #0066ff;
   color: #fff;
   border: none;
@@ -97,12 +175,15 @@
   transition: 0.3s;
   align-self: center;
   width: 100%;
-  margin-top: auto; /* pushes button to bottom */
-  margin-bottom: 10px; /* small bottom gap */
+  margin-top: auto;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 15px rgba(0, 102, 255, 0.25);
 }
 
-.continue-btn1:hover {
+.continue-btn11:hover {
   background-color: #0052cc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 82, 204, 0.35);
 }
 
 /* ---------- Responsive ---------- */
@@ -121,7 +202,7 @@
     padding: 8px 16px;
   }
 
-  .continue-btn1 {
+  .continue-btn11 {
     font-size: 16px;
   }
 

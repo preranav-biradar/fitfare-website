@@ -16,7 +16,7 @@ const Home = () => {
     <div className="home-container">
       {/* Main Content */}
       <div className="home-content">
-        <img src="/image1.jpg" alt="Nutrition Illustration" className="illustration" />
+        <img src="/B3.png" alt="Nutrition Illustration" className="illustration" />
         <h2>Log your Nutrition Daily To Get Better Result</h2>
         <p>Let's manage your nutrition with ease</p>
         <button className="get-started-btn" onClick={() => navigate("/setup")}>
